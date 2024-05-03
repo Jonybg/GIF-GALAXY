@@ -27,7 +27,7 @@ export const ContextGifs = ({ children }) => {
     const fetchData = async () => {
 
         try {
-            const { data } = await axios.get(`https://api.giphy.com/v1/stickers/search?api_key=StlwbbPLn6r0GrnO9C2vbqGNcRV4XL45&q=${inputValue}`)
+            const { data } = await axios.get(`https://api.giphy.com/v1/gifs/search?api_key=StlwbbPLn6r0GrnO9C2vbqGNcRV4XL45&q=${inputValue}`)
             setdata(data.data)
 
             if (data.data.length === 0) {
