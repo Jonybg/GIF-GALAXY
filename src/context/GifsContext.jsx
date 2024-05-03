@@ -34,7 +34,11 @@ export const ContextGifs = ({ children }) => {
                 toast.error("no gifs found")
             }
 
-            toast.success(`were found ${data.data.length} gifs`)
+            if (data.data.length > 1) {
+                toast.success(`were found ${data.data.length} gifs`)
+            }
+
+
 
 
 
