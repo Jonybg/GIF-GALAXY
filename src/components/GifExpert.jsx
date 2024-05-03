@@ -13,11 +13,11 @@ export const GifExpert = () => {
 
     return (
         <div className='flex flex-col justify-center items-center gap-8'>
-            <div className='flex justify-between items-center w-full'>
-                <h1 className={`text-${isChecked ? 'black' : 'black'} text-white text-4xl text-center m-auto mt-12`}>
+            <div className='flex justify-end  items-center w-full'>
+                <h1 className={`${isChecked ? 'black' : 'black'} text-white text-4xl   m-auto mt-28`}>
                     GIF GALAXY
                 </h1>
-                <div className='mt-12' onClick={handleCheked}>
+                <div className='mb-20  absolute ' onClick={handleCheked}>
                     <CustomizedSwitches />
                 </div>
             </div>
